@@ -1,0 +1,780 @@
+{\rtf1\ansi\ansicpg950\cocoartf2870
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="zh-TW">\
+<head>\
+    <meta charset="UTF-8">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <title>\uc0\u38748 \u24515 \u39640 \u20013 \u23416 \u29983 \u26371 \u26371 \u38263 \u20449 \u31665  \'97 \u27665 \u24847 \u38515 \u24773 \u31995 \u32113 </title>\
+    <style>\
+        body \{\
+            font-family: "Microsoft JhengHei", Arial, sans-serif;\
+            background-color: #121212;\
+            color: #e0e0e0;\
+            margin: 0;\
+            padding: 20px;\
+        \}\
+        .container \{\
+            max-width: 600px;\
+            background: #1e1e1e;\
+            margin: 40px auto;\
+            padding: 30px;\
+            border-radius: 8px;\
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);\
+        \}\
+        h2 \{\
+            text-align: center;\
+            color: #ffffff;\
+            margin-bottom: 20px;\
+        \}\
+        .welcome-text \{\
+            text-align: center;\
+            color: #aaaaaa;\
+            line-height: 1.6;\
+            margin-bottom: 30px;\
+            font-size: 15px;\
+        \}\
+        .section-title \{\
+            font-size: 18px;\
+            color: #3b82f6;\
+            border-left: 4px solid #3b82f6;\
+            padding-left: 10px;\
+            margin-top: 30px;\
+            margin-bottom: 15px;\
+            font-weight: bold;\
+        \}\
+        .section-title-banner \{\
+            background-color: #1d3557;\
+            color: #a8dadc;\
+            padding: 12px 15px;\
+            font-size: 18px;\
+            font-weight: bold;\
+            margin-top: 40px;\
+            margin-bottom: 20px;\
+            border-radius: 4px;\
+        \}\
+        .form-group \{\
+            margin-bottom: 15px;\
+        \}\
+        label \{\
+            display: block;\
+            margin-bottom: 5px;\
+            font-weight: bold;\
+            color: #cccccc;\
+        \}\
+        input[type="text"], input[type="email"], input[type="tel"], textarea, select \{\
+            width: 100%;\
+            padding: 10px;\
+            background-color: #2d2d2d;\
+            border: 1px solid #444444;\
+            border-radius: 4px;\
+            box-sizing: border-box;\
+            font-size: 14px;\
+            color: #ffffff;\
+        \}\
+        input:focus, textarea:focus, select:focus \{\
+            outline: none;\
+            border-color: #3b82f6;\
+            box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);\
+        \}\
+        .note \{\
+            font-size: 12px;\
+            color: #aaaaaa;\
+            margin-top: -10px;\
+            margin-bottom: 10px;\
+        \}\
+        .required-star \{\
+            color: #ff6b6b;\
+            font-weight: bold;\
+            margin-left: 2px;\
+        \}\
+        .form-hint-red \{\
+            font-size: 12px;\
+            color: #ff6b6b;\
+            margin-top: 4px;\
+            margin-bottom: 10px;\
+            line-height: 1.5;\
+        \}\
+        textarea \{\
+            resize: vertical;\
+            height: 150px;\
+        \}\
+\
+        /* \uc0\u39511 \u35657 \u30908 \u21312 \u22602 \u27171 \u24335  */\
+        .captcha-container \{\
+            display: flex;\
+            align-items: center;\
+            gap: 10px;\
+            margin-top: 10px;\
+        \}\
+        .captcha-canvas \{\
+            background-color: #ffffff;\
+            border: 1px solid #ccc;\
+            border-radius: 4px;\
+            cursor: pointer;\
+        \}\
+        .captcha-btn \{\
+            background-color: #555555;\
+            color: white;\
+            border: none;\
+            padding: 8px 12px;\
+            border-radius: 4px;\
+            cursor: pointer;\
+            font-size: 16px;\
+            display: flex;\
+            align-items: center;\
+            justify-content: center;\
+            height: 38px;\
+            width: 40px;\
+        \}\
+        .captcha-btn:hover \{\
+            background-color: #666666;\
+        \}\
+\
+        /* \uc0\u38642 \u31471 \u30828 \u30879 \u25552 \u31034 \u22806 \u26694  */\
+        .drive-instruction-box \{\
+            background-color: #252525;\
+            border: 1px dashed #555555;\
+            padding: 12px 15px;\
+            border-radius: 6px;\
+            margin-top: 8px;\
+            font-size: 13px;\
+            color: #cccccc;\
+            line-height: 1.6;\
+        \}\
+        .drive-instruction-box ul \{\
+            margin: 5px 0 0 0;\
+            padding-left: 20px;\
+        \}\
+\
+        /* \uc0\u25353 \u37397 \u22522 \u26412 \u27171 \u24335  */\
+        .btn-group \{\
+            display: flex;\
+            justify-content: space-between;\
+            gap: 15px;\
+            margin-top: 30px;\
+        \}\
+        .btn-group-vertical \{\
+            display: flex;\
+            flex-direction: column;\
+            gap: 15px;\
+            margin-top: 20px;\
+        \}\
+        .btn \{\
+            padding: 12px;\
+            border: none;\
+            border-radius: 4px;\
+            font-size: 16px;\
+            cursor: pointer;\
+            font-weight: bold;\
+            text-align: center;\
+            transition: background 0.2s;\
+        \}\
+        .btn-blue \{\
+            background-color: #2563eb;\
+            color: white;\
+        \}\
+        .btn-blue:hover \{\
+            background-color: #1d4ed8;\
+        \}\
+        .btn-gray \{\
+            background-color: #555555;\
+            color: white;\
+        \}\
+        .btn-gray:hover \{\
+            background-color: #666666;\
+        \}\
+        .btn-full \{\
+            width: 100%;\
+        \}\
+\
+        /* \uc0\u38928 \u35261 \u30906 \u35469 \u38913 \u38754 \u30340 \u21807 \u35712 \u36039 \u26009 \u26684 \u24335  */\
+        .preview-value \{\
+            width: 100%;\
+            padding: 10px;\
+            background-color: #252525;\
+            border: 1px solid #333333;\
+            border-radius: 4px;\
+            box-sizing: border-box;\
+            font-size: 14px;\
+            color: #ffffff;\
+            min-height: 38px;\
+            word-break: break-all;\
+        \}\
+        .preview-textarea \{\
+            min-height: 120px;\
+            white-space: pre-wrap;\
+        \}\
+\
+        /* \uc0\u24863 \u35613 \u38913 \u38754 \u29305 \u27530 \u27171 \u24335  */\
+        .success-box \{\
+            background-color: #14532d;\
+            border: 1px solid #166534;\
+            padding: 20px;\
+            border-radius: 6px;\
+            text-align: center;\
+            font-size: 16px;\
+            line-height: 1.8;\
+            margin: 20px 0;\
+            color: #bbf7d0;\
+        \}\
+        .case-number-text \{\
+            font-size: 20px;\
+            font-weight: bold;\
+            color: #fde047;\
+            margin-top: 10px;\
+            letter-spacing: 1px;\
+        \}\
+\
+        /* \uc0\u36914 \u24230 \u26597 \u35426 \u32080 \u26524 \u34920 \u26684 \u27171 \u24335  */\
+        .status-table \{\
+            width: 100%;\
+            border-collapse: collapse;\
+            margin-top: 15px;\
+            margin-bottom: 25px;\
+            background-color: #1e1e1e;\
+        \}\
+        .status-table th, .status-table td \{\
+            border: 1px solid #444444;\
+            padding: 12px;\
+            text-align: left;\
+            font-size: 14px;\
+        \}\
+        .status-table th \{\
+            background-color: #1d3557;\
+            color: #a8dadc;\
+            font-weight: bold;\
+            width: 25%;\
+        \}\
+        .status-table td \{\
+            background-color: #252525;\
+            color: #ffffff;\
+            white-space: pre-wrap;\
+            word-break: break-all;\
+        \}\
+        .status-highlight-row th \{\
+            background-color: #1e3a8a !important;\
+            color: #fde047 !important;\
+        \}\
+        .status-highlight-row td \{\
+            font-weight: bold;\
+            color: #fde047 !important;\
+        \}\
+\
+        /* \uc0\u24460 \u21488 \u26696 \u20214 \u21345 \u29255 \u27171 \u24335  */\
+        .admin-case-card \{\
+            background-color: #252525;\
+            border: 1px solid #444444;\
+            border-radius: 6px;\
+            padding: 15px;\
+            margin-bottom: 20px;\
+        \}\
+        .admin-case-header \{\
+            display: flex;\
+            justify-content: space-between;\
+            border-bottom: 1px solid #444444;\
+            padding-bottom: 8px;\
+            margin-bottom: 12px;\
+            font-size: 14px;\
+            color: #aaa;\
+        \}\
+        .admin-case-id \{\
+            font-weight: bold;\
+            color: #3b82f6;\
+        \}\
+\
+        .page \{\
+            display: none;\
+        \}\
+        #page-home \{\
+            display: block;\
+        \}\
+    </style>\
+</head>\
+<body>\
+\
+<div class="container">\
+    <h2>\uc0\u55356 \u57307 \u65039  \u38748 \u24515 \u39640 \u20013 \u23416 \u29983 \u26371 \u26371 \u38263 \u20449 \u31665  \'97 \u27665 \u24847 \u38515 \u24773 \u31995 \u32113 </h2>\
+\
+    <div id="page-home" class="page">\
+        <p class="welcome-text">\uc0\u27489 \u36814 \u20351 \u29992 \u33274 \u21271 \u24066 \u31169 \u31435 \u38748 \u24515 \u39640 \u32026 \u20013 \u23416 \u23416 \u29983 \u26371 \u26371 \u38263 \u20449 \u31665 \u65288 \u38515 \u24773 \u31995 \u32113 \u65289 \u65292 \u24744 \u30340 \u24847 \u35211 \u26159 \u25105 \u20497 \u21069 \u36914 \u30340 \u21205 \u21147 \u65281 </p>\
+        <div class="btn-group-vertical">\
+            <button type="button" class="btn btn-blue" onclick="navigateTo('page-write')">\uc0\u25105 \u35201 \u23531 \u20449 </button>\
+            <button type="button" class="btn btn-gray" onclick="navigateTo('page-search')">\uc0\u26696 \u20214 \u36914 \u24230 \u26597 \u35426 </button>\
+        </div>\
+    </div>\
+\
+    <div id="page-write" class="page">\
+        <p style="text-align: center; color: #aaa;">\uc0\u35531 \u22635 \u23531 \u20197 \u19979 \u36039 \u35338 \u65306 </p>\
+        <form id="petitionForm" onsubmit="handleFormSubmit(event)">\
+            \
+            <div class="section-title">\uc0\u19968 \u12289 \u38515 \u24773 \u20154 \u22522 \u26412 \u36039 \u26009 </div>\
+            <div class="form-group"><label for="class_name">\uc0\u29677 \u32026 </label><input type="text" id="class_name" required placeholder="\u20363 \u22914 \u65306 \u19977 \u24180 2\u29677 "></div>\
+            <div class="form-group"><label for="seat_number">\uc0\u24231 \u34399 </label><input type="text" id="seat_number" required placeholder="\u20363 \u22914 \u65306 05"></div>\
+            <div class="form-group"><label for="name">\uc0\u22995 \u21517 </label><input type="text" id="name" required placeholder="\u35531 \u36664 \u20837 \u24744 \u30340 \u30495 \u23526 \u22995 \u21517 "></div>\
+            <div class="form-group">\
+                <label for="gender">\uc0\u24615 \u21029 </label>\
+                <select id="gender" required>\
+                    <option value="" style="background:#2d2d2d; color:#fff;">-- \uc0\u35531 \u36984 \u25799 \u24615 \u21029  --</option>\
+                    <option value="\uc0\u30007 " style="background:#2d2d2d; color:#fff;">\u30007 </option>\
+                    <option value="\uc0\u22899 " style="background:#2d2d2d; color:#fff;">\u22899 </option>\
+                    <option value="\uc0\u38750 \u29694 \u34892 \u20108 \u20803 \u24615 \u21029 /\u22810 \u20803 \u24615 \u21029 " style="background:#2d2d2d; color:#fff;">\u19981 \u39000 \u36879 \u38706  / \u20854 \u20182 </option>\
+                </select>\
+            </div>\
+            <div class="form-group"><label for="student_id">\uc0\u23416 \u34399 </label><input type="text" id="student_id" required placeholder="\u35531 \u36664 \u20837 \u24744 \u30340 \u23416 \u29983 \u35657 \u34399 \u30908 "></div>\
+            <div class="form-group">\
+                <label for="email">\uc0\u38651 \u23376 \u37109 \u20214 \u20449 \u31665 </label>\
+                <input type="email" id="email" required placeholder="example@email.com">\
+                <p class="note">\uc0\u31995 \u32113 \u23559 \u26371 \u33258 \u21205 \u30332 \u36865 \u30906 \u35469 \u20449 \u33267 \u27492 \u20449 \u31665 </p>\
+            </div>\
+            <div class="form-group"><label for="phone">\uc0\u32879 \u32097 \u38651 \u35441 \u65288 \u36984 \u22635 \u65289 </label><input type="tel" id="phone" placeholder="\u20363 \u22914 \u65306 0912-345678\u65288 \u36984 \u22635 \u65289 "></div>\
+\
+            <div class="section-title-banner">\uc0\u26696 \u20214 \u36039 \u26009 </div>\
+            <div class="form-group">\
+                <label for="category">\uc0\u26696 \u20214 \u38917 \u30446 <span class="required-star">*</span></label>\
+                <select id="category" required>\
+                    <option value="" style="background:#2d2d2d; color:#fff;">-- \uc0\u35531 \u36984 \u25799 \u20998 \u39006  --</option>\
+                    <option value="\uc0\u23416 \u29983 \u26371 \u25919 \u31574 \u21450 \u27963 \u21205 \u39006 " style="background:#2d2d2d; color:#fff;">1. \u23416 \u29983 \u26371 \u25919 \u31574 \u21450 \u27963 \u21205 \u39006 </option>\
+                    <option value="\uc0\u23416 \u29983 \u26371 \u25919 \u39080 \u39006 " style="background:#2d2d2d; color:#fff;">2. \u23416 \u29983 \u26371 \u25919 \u39080 \u39006 </option>\
+                    <option value="\uc0\u23416 \u26657 \u25919 \u31574 \u21450 \u27963 \u21205 \u39006 " style="background:#2d2d2d; color:#fff;">3. \u23416 \u26657 \u25919 \u31574 \u21450 \u27963 \u21205 \u39006 </option>\
+                    <option value="\uc0\u26657 \u22290 \u29872 \u22659 \u21450 \u34907 \u29983 \u39006 " style="background:#2d2d2d; color:#fff;">4. \u26657 \u22290 \u29872 \u22659 \u21450 \u34907 \u29983 \u39006 \u65288 \u32654 \u21270 \u12289 \u27584 \u25613 \u12289 \u39634 \u20098 \u65289 </option>\
+                    <option value="\uc0\u20854 \u20182 \u24847 \u35211 " style="background:#2d2d2d; color:#fff;">5. \u20854 \u20182 \u24847 \u35211 </option>\
+                </select>\
+            </div>\
+            <div class="form-group"><label for="location">\uc0\u26696 \u20214 \u20301 \u32622 <span class="required-star">*</span></label><input type="text" id="location" required placeholder="\u35531 \u36664 \u20837 \u26696 \u20214 \u20301 \u32622 \u65292 \u33509 \u28961 \u35531 \u22635 \u28961 "></div>\
+            <div class="form-group">\
+                <label for="subject">\uc0\u26696 \u20214 \u20027 \u26088 <span class="required-star">*</span></label>\
+                <input type="text" id="subject" required placeholder="\uc0\u35531 \u36664 \u20837 \u26696 \u20214 \u20027 \u26088 ">\
+                <div class="form-hint-red">\uc0\u26368 \u22810 200\u23383 </div>\
+            </div>\
+            <div class="form-group">\
+                <label for="content">\uc0\u26696 \u20214 \u20839 \u23481 <span class="required-star">*</span></label>\
+                <textarea id="content" required placeholder="\uc0\u35531 \u36664 \u20837 \u26696 \u20214 \u20839 \u23481 "></textarea>\
+                <div class="form-hint-red">\uc0\u35531 \u33258 \u34892 \u35036 \u20805 \u25944 \u36848 \u65292 \u23383 \u25976 \u38480 \u20108 \u21315 \u23383 \u20197 \u20839 \u65292 \u22914 \u20839 \u23481 \u36942 \u38263 \u35531 \u25913 \u20197 \u38468 \u21152 \u27284 \u26696 \u26041 \u24335 \u25552 \u20379 \u12290 </div>\
+            </div>\
+\
+            <div class="section-title-banner">\uc0\u38468 \u20214 \u19978 \u20659 </div>\
+            <div class="form-group">\
+                <label for="drive_url">\uc0\u30456 \u38364 \u20304 \u35657 \u38468 \u20214 \u36899 \u32080 \u65288 \u36984 \u22635 \u65289 </label>\
+                <input type="text" id="drive_url" placeholder="https://drive.google.com/file/d/...\uc0\u65288 \u36984 \u22635 \u65289 ">\
+                <div class="drive-instruction-box">\
+                    \uc0\u55357 \u56481  <strong>\u38642 \u31471 \u30828 \u30879 \u36899 \u32080 \u20998 \u20139 \u23567 \u25552 \u37266 \u65306 </strong>\
+                    <ul>\
+                        <li>1. \uc0\u35531 \u23559 \u27284 \u26696 \u19978 \u20659 \u33267 \u24744 \u30340  Google Drive\u12290 </li>\
+                        <li>2. \uc0\u23565 \u27284 \u26696 \u25353 \u21491 \u37749 \u36984 \u25799 <strong>\u12300 \u20849 \u29992 \u12301 </strong> &gt; <strong>\u12300 \u35079 \u35069 \u36899 \u32080 \u12301 </strong>\u12290 </li>\
+                        <li>3. \uc0\u35531 \u21209 \u24517 \u30906 \u35469 \u23559 \u19968 \u33324 \u23384 \u21462 \u27402 \u25913 \u28858 <strong>\u12300 \u30693 \u36947 \u36899 \u32080 \u30340 \u20219 \u20309 \u20154 \u12301 </strong>\u21908 \u65281 </li>\
+                    </ul>\
+                </div>\
+            </div>\
+\
+            <div class="form-group">\
+                <label for="captcha_input1">\uc0\u39511 \u35657 \u30908 <span class="required-star">*</span></label>\
+                <input type="text" id="captcha_input1" required placeholder="\uc0\u35531 \u36664 \u20837 \u19979 \u26041 \u39511 \u35657 \u30908 ">\
+                <div class="captcha-container">\
+                    <canvas id="captchaCanvas1" class="captcha-canvas" width="100" height="38"></canvas>\
+                    <button type="button" class="captcha-btn" id="refreshBtn1">\uc0\u10227 </button>\
+                    <button type="button" class="captcha-btn" id="audioBtn1">\uc0\u55357 \u56586 </button>\
+                </div>\
+            </div>\
+\
+            <div class="btn-group">\
+                <button type="button" class="btn btn-gray" onclick="goBackToHome('petitionForm')">\uc0\u22238 \u39318 \u38913 </button>\
+                <button type="submit" class="btn btn-blue">\uc0\u19979 \u19968 \u27493 </button>\
+            </div>\
+        </form>\
+    </div>\
+\
+    <div id="page-preview" class="page">\
+        <p style="text-align: center; color: #aaa;">\uc0\u35531 \u30906 \u35469 \u24744 \u22635 \u23531 \u30340 \u20839 \u23481 \u26159 \u21542 \u27491 \u30906 \u28961 \u35492 \u65306 </p>\
+        \
+        <div class="section-title">\uc0\u19968 \u12289 \u38515 \u24773 \u20154 \u22522 \u26412 \u36039 \u26009 </div>\
+        <div class="form-group"><label>\uc0\u29677 \u32026 </label><div id="p-class" class="preview-value"></div></div>\
+        <div class="form-group"><label>\uc0\u24231 \u34399 </label><div id="p-seat" class="preview-value"></div></div>\
+        <div class="form-group"><label>\uc0\u22995 \u21517 </label><div id="p-name" class="preview-value"></div></div>\
+        <div class="form-group"><label>\uc0\u24615 \u21029 </label><div id="p-gender" class="preview-value"></div></div>\
+        <div class="form-group"><label>\uc0\u23416 \u34399 </label><div id="p-student-id" class="preview-value"></div></div>\
+        <div class="form-group"><label>\uc0\u38651 \u23376 \u37109 \u20214 \u20449 \u31665 </label><div id="p-email" class="preview-value"></div></div>\
+        <div class="form-group"><label>\uc0\u32879 \u32097 \u38651 \u35441 </label><div id="p-phone" class="preview-value"></div></div>\
+\
+        <div class="section-title-banner">\uc0\u26696 \u20214 \u36039 \u26009 </div>\
+        <div class="form-group"><label>\uc0\u26696 \u20214 \u38917 \u30446 </label><div id="p-category" class="preview-value"></div></div>\
+        <div class="form-group"><label>\uc0\u26696 \u20214 \u20301 \u32622 </label><div id="p-location" class="preview-value"></div></div>\
+        <div class="form-group"><label>\uc0\u26696 \u20214 \u20027 \u26088 </label><div id="p-subject" class="preview-value"></div></div>\
+        <div class="form-group"><label>\uc0\u26696 \u20214 \u20839 \u23481 </label><div id="p-content" class="preview-value preview-textarea"></div></div>\
+\
+        <div class="section-title-banner">\uc0\u38468 \u20214 \u19978 \u20659 </div>\
+        <div class="form-group"><label>\uc0\u30456 \u38364 \u20304 \u35657 \u38468 \u20214 \u36899 \u32080 </label><div id="p-drive" class="preview-value"></div></div>\
+\
+        <div class="btn-group">\
+            <button type="button" class="btn btn-gray" onclick="navigateTo('page-write')">\uc0\u25105 \u35201 \u20462 \u25913 \u20839 \u23481 </button>\
+            <button type="button" class="btn btn-blue" onclick="finalSubmitForm()">\uc0\u24050 \u30906 \u35469 \u28961 \u35492 </button>\
+        </div>\
+    </div>\
+\
+    <div id="page-success" class="page">\
+        <div class="success-box">\
+            \uc0\u24744 \u24050 \u30906 \u35469 \u36865 \u20986 \u38515 \u24773 \u26696 \u20214 \u65292 \u26412 \u26371 \u26371 \u30433 \u24555 \u35531 \u30456 \u38364 \u21934 \u20301 \u22238 \u35206 \u24744 \u65292 \u24863 \u35613 \u24744 \u30340 \u25351 \u25945 \u65281 \
+            <div class="case-number-text">\uc0\u26696 \u20214 \u32232 \u34399 \u65306 <span id="case-id-placeholder"></span></div>\
+        </div>\
+        <button type="button" class="btn btn-blue btn-full" onclick="resetAndHome()">\uc0\u22238 \u21040 \u39318 \u38913 </button>\
+    </div>\
+\
+    <div id="page-search" class="page">\
+        <div class="section-title">\uc0\u36914 \u24230 \u26597 \u35426 \u39511 \u35657 </div>\
+        <form id="searchForm" onsubmit="handleSearchSubmit(event)">\
+            <div class="form-group">\
+                <label for="search_case_id">\uc0\u26696 \u20214 \u32232 \u34399 </label>\
+                <input type="text" id="search_case_id" required placeholder="\uc0\u35531 \u36664 \u20837 \u23436 \u25972 \u30340 \u26696 \u20214 \u32232 \u34399 ">\
+            </div>\
+            <div class="form-group">\
+                <label for="search_student_id">\uc0\u23416 \u34399 </label>\
+                <input type="text" id="search_student_id" required placeholder="\uc0\u35531 \u36664 \u20837 \u22635 \u23531 \u20154 \u30340 \u23416 \u34399 ">\
+            </div>\
+            <div class="form-group">\
+                <label for="captcha_input2">\uc0\u39511 \u35657 \u30908 <span class="required-star">*</span></label>\
+                <input type="text" id="captcha_input2" required placeholder="\uc0\u35531 \u36664 \u20837 \u19979 \u26041 \u39511 \u35657 \u30908 ">\
+                <div class="captcha-container">\
+                    <canvas id="captchaCanvas2" class="captcha-canvas" width="100" height="38"></canvas>\
+                    <button type="button" class="captcha-btn" id="refreshBtn2">\uc0\u10227 </button>\
+                    <button type="button" class="captcha-btn" id="audioBtn2">\uc0\u55357 \u56586 </button>\
+                </div>\
+            </div>\
+            <div class="btn-group">\
+                <button type="button" class="btn btn-gray" onclick="goBackToHome('searchForm')">\uc0\u22238 \u39318 \u38913 </button>\
+                <button type="submit" class="btn btn-blue">\uc0\u30906 \u35469 \u26597 \u35426 </button>\
+            </div>\
+        </form>\
+    </div>\
+\
+    <div id="page-status-result" class="page">\
+        <div class="section-title">\uc0\u26696 \u20214 \u23436 \u25972 \u36039 \u26009 \u33287 \u34389 \u29702 \u36914 \u24230 </div>\
+        \
+        <table class="status-table">\
+            <tr><th colspan="2" style="background-color: #111827; text-align: center; color: #fff;">\uc0\u19968 \u12289 \u38515 \u24773 \u20154 \u22522 \u26412 \u36039 \u26009 </th></tr>\
+            <tr><th>\uc0\u29677 \u32026 </th><td id="t-class"></td></tr>\
+            <tr><th>\uc0\u24231 \u34399 </th><td id="t-seat"></td></tr>\
+            <tr><th>\uc0\u22995 \u21517 </th><td id="t-name"></td></tr>\
+            <tr><th>\uc0\u24615 \u21029 </th><td id="t-gender"></td></tr>\
+            <tr><th>\uc0\u23416 \u34399 </th><td id="t-student-id"></td></tr>\
+            <tr><th>\uc0\u38651 \u23376 \u37109 \u20214 \u20449 \u31665 </th><td id="t-email"></td></tr>\
+            <tr><th>\uc0\u32879 \u32097 \u38651 \u35441 </th><td id="t-phone"></td></tr>\
+            \
+            <tr><th colspan="2" style="background-color: #111827; text-align: center; color: #fff;">\uc0\u20108 \u12289 \u26696 \u20214 \u36039 \u26009 </th></tr>\
+            <tr><th>\uc0\u26696 \u20214 \u38917 \u30446 </th><td id="t-category"></td></tr>\
+            <tr><th>\uc0\u26696 \u20214 \u20301 \u32622 </th><td id="t-location"></td></tr>\
+            <tr><th>\uc0\u26696 \u20214 \u20027 \u26088 </th><td id="t-subject"></td></tr>\
+            <tr><th>\uc0\u26696 \u20214 \u20839 \u23481 </th><td id="t-content"></td></tr>\
+            <tr><th>\uc0\u30456 \u38364 \u20304 \u35657 \u38468 \u20214 \u36899 \u32080 </th><td id="t-drive"></td></tr>\
+            \
+            <tr class="status-highlight-row"><th>\uc0\u26696 \u20214 \u36914 \u24230 </th><td id="t-status"></td></tr>\
+        </table>\
+        \
+        <button type="button" class="btn btn-blue btn-full" onclick="goBackToHome('searchForm')">\uc0\u22238 \u21040 \u39318 \u38913 </button>\
+    </div>\
+\
+    <div id="page-admin-dashboard" class="page">\
+        <div class="section-title" style="color: #fde047; border-left-color: #fde047;">\uc0\u9881 \u65039  \u23416 \u29983 \u26371 \u24460 \u21488 \u31649 \u29702 \u31471 </div>\
+        <p style="color: #aaa; margin-bottom: 20px;">\uc0\u20677 \u39023 \u31034 \u12300 \u26696 \u20214 \u36039 \u26009 \u12301 \u37096 \u20998 \u65288 \u19981 \u36879 \u38706 \u38515 \u24773 \u20154 \u20491 \u36039 \u65289 \u65292 \u20379 \u23416 \u29983 \u26371 \u26597 \u26680 \u26356 \u21205 \u36914 \u24230 \u65306 </p>\
+        \
+        <div id="admin-cases-container">\
+            <p style="color: #666; text-align: center; padding:20px;">\uc0\u27491 \u22312 \u36899 \u32218 \u38642 \u31471 \u36039 \u26009 \u24235 \u35712 \u21462 \u36039 \u26009 \u20013 ...</p>\
+        </div>\
+        \
+        <button type="button" class="btn btn-gray btn-full" style="margin-top: 20px;" onclick="location.href=location.pathname">\uc0\u30331 \u20986 \u24460 \u21488 \u22238 \u21040 \u39318 \u38913 </button>\
+    </div>\
+\
+</div>\
+\
+<script>\
+    // \uc0\u20320 \u30340  Firebase Realtime Database API \u31680 \u40670 \u32178 \u22336 \
+    const FIREBASE_DB_URL = "https://studentconcil-9e654-default-rtdb.asia-southeast1.firebasedatabase.app/";\
+\
+    let captcha1 = "";\
+    let captcha2 = "";\
+    let tempFormData = \{\};\
+\
+    function navigateTo(pageId) \{\
+        document.querySelectorAll('.page').forEach(page => page.style.display = 'none');\
+        document.getElementById(pageId).style.display = 'block';\
+        window.scrollTo(0, 0);\
+    \}\
+\
+    function goBackToHome(formId) \{\
+        document.getElementById(formId).reset();\
+        refreshCaptcha1();\
+        refreshCaptcha2();\
+        navigateTo('page-home');\
+    \}\
+\
+    function resetAndHome() \{\
+        document.getElementById('petitionForm').reset();\
+        refreshCaptcha1();\
+        navigateTo('page-home');\
+    \}\
+\
+    function drawCaptcha(canvasId, targetText) \{\
+        const canvas = document.getElementById(canvasId);\
+        if(!canvas) return;\
+        const ctx = canvas.getContext('2d');\
+        ctx.fillStyle = "#ffffff";\
+        ctx.fillRect(0, 0, canvas.width, canvas.height);\
+        for (let i = 0; i < 4; i++) \{\
+            ctx.strokeStyle = `rgba($\{Math.random()*100\},$\{Math.random()*100\},$\{Math.random()*100\},0.3)`;\
+            ctx.beginPath();\
+            ctx.moveTo(Math.random() * canvas.width, Math.random() * canvas.height);\
+            ctx.lineTo(Math.random() * canvas.width, Math.random() * canvas.height);\
+            ctx.stroke();\
+        \}\
+        ctx.font = "bold 22px Courier New";\
+        const colors = ["#4e9a06", "#204a87", "#c4a000", "#5c3566"];\
+        for (let i = 0; i < targetText.length; i++) \{\
+            ctx.fillStyle = colors[i % colors.length];\
+            ctx.save();\
+            ctx.translate(15 + (i * 20), 26 + (Math.random() * 4 - 2));\
+            ctx.rotate((Math.random() * 20 - 10) * Math.PI / 180);\
+            ctx.fillText(targetText[i], 0, 0);\
+            ctx.restore();\
+        \}\
+    \}\
+\
+    function refreshCaptcha1() \{\
+        captcha1 = Math.floor(1000 + Math.random() * 9000).toString();\
+        drawCaptcha('captchaCanvas1', captcha1);\
+    \}\
+\
+    function refreshCaptcha2() \{\
+        captcha2 = Math.floor(1000 + Math.random() * 9000).toString();\
+        drawCaptcha('captchaCanvas2', captcha2);\
+    \}\
+\
+    function playAudio(text) \{\
+        if ('speechSynthesis' in window) \{\
+            const utterance = new SpeechSynthesisUtterance(text.split('').join(' '));\
+            utterance.lang = 'zh-TW';\
+            window.speechSynthesis.speak(utterance);\
+        \} else \{\
+            alert("\uc0\u24744 \u30340 \u28687 \u35261 \u22120 \u19981 \u25903 \u25588 \u35486 \u38899 \u25773 \u25918 \u21151 \u33021 \u12290 ");\
+        \}\
+    \}\
+\
+    // \uc0\u25105 \u35201 \u23531 \u20449 \u65306 \u19979 \u19968 \u27493 \
+    function handleFormSubmit(event) \{\
+        event.preventDefault();\
+        \
+        const userInput = document.getElementById('captcha_input1').value.trim();\
+        if (userInput !== captcha1) \{\
+            alert("\uc0\u39511 \u35657 \u30908 \u36664 \u20837 \u37679 \u35492 \u65292 \u35531 \u37325 \u26032 \u36664 \u20837 \u65281 ");\
+            document.getElementById('captcha_input1').value = "";\
+            refreshCaptcha1();\
+            return;\
+        \}\
+\
+        tempFormData = \{\
+            className: document.getElementById('class_name').value,\
+            seatNumber: document.getElementById('seat_number').value,\
+            name: document.getElementById('name').value,\
+            gender: document.getElementById('gender').value,\
+            studentId: document.getElementById('student_id').value,\
+            email: document.getElementById('email').value,\
+            phone: document.getElementById('phone').value || "\uc0\u28961 ",\
+            category: document.getElementById('category').value,\
+            location: document.getElementById('location').value,\
+            subject: document.getElementById('subject').value,\
+            content: document.getElementById('content').value,\
+            driveUrl: document.getElementById('drive_url').value || "\uc0\u28961 ",\
+            status: "\uc0\u23416 \u29983 \u26371 \u26597 \u26680 \u34389 \u29702 \u20013 "\
+        \};\
+\
+        document.getElementById('p-class').textContent = tempFormData.className;\
+        document.getElementById('p-seat').textContent = tempFormData.seatNumber;\
+        document.getElementById('p-name').textContent = tempFormData.name;\
+        document.getElementById('p-gender').textContent = tempFormData.gender;\
+        document.getElementById('p-student-id').textContent = tempFormData.studentId;\
+        document.getElementById('p-email').textContent = tempFormData.email;\
+        document.getElementById('p-phone').textContent = tempFormData.phone;\
+        document.getElementById('p-category').textContent = tempFormData.category;\
+        document.getElementById('p-location').textContent = tempFormData.location;\
+        document.getElementById('p-subject').textContent = tempFormData.subject;\
+        document.getElementById('p-content').textContent = tempFormData.content;\
+        document.getElementById('p-drive').textContent = tempFormData.driveUrl;\
+\
+        navigateTo('page-preview');\
+    \}\
+\
+    // \uc0\u24050 \u30906 \u35469 \u28961 \u35492 \u65306 \u21521 \u38642 \u31471 \u36039 \u26009 \u24235 \u36958 \u22686 \u35336 \u25976 \u20006 \u23531 \u20837 \u26696 \u20214 \
+    function finalSubmitForm() \{\
+        const now = new Date();\
+        const minguoYear = now.getFullYear() - 1911;\
+        const month = String(now.getMonth() + 1).padStart(2, '0');\
+\
+        // \uc0\u31532 \u19968 \u27493 \u65306 \u21521  Firebase \u35712 \u21462 \u30446 \u21069 \u20840 \u26657 \u32317 \u27969 \u27700 \u34399 \
+        fetch(`$\{FIREBASE_DB_URL\}petition_count.json`)\
+            .then(res => res.json())\
+            .then(countData => \{\
+                let currentCount = parseInt(countData || '0');\
+                currentCount += 1;\
+\
+                // \uc0\u31532 \u20108 \u27493 \u65306 \u21516 \u27493 \u23531 \u20837 \u26356 \u26032 \u24460 \u30340 \u27969 \u27700 \u34399 \u33287 \u26696 \u20214 \u20839 \u23481 \u21040  Firebase \u31680 \u40670 \u20013 \
+                const paddingCounter = String(currentCount).padStart(3, '0');\
+                const finalCaseId = `$\{minguoYear\}$\{month\}$\{paddingCounter\}`;\
+\
+                const updateCountPromise = fetch(`$\{FIREBASE_DB_URL\}petition_count.json`, \{\
+                    method: 'PUT',\
+                    body: JSON.stringify(currentCount)\
+                \});\
+\
+                const uploadCasePromise = fetch(`$\{FIREBASE_DB_URL\}petitions/$\{finalCaseId\}.json`, \{\
+                    method: 'PUT',\
+                    body: JSON.stringify(tempFormData)\
+                \});\
+\
+                return Promise.all([updateCountPromise, uploadCasePromise]).then(() => finalCaseId);\
+            \})\
+            .then(finalCaseId => \{\
+                document.getElementById('case-id-placeholder').textContent = finalCaseId;\
+                document.getElementById('captcha_input1').value = ""; \
+                navigateTo('page-success');\
+            \})\
+            .catch(err => \{\
+                console.error(err);\
+                alert("\uc0\u38642 \u31471 \u32178 \u36335 \u36899 \u32218 \u37679 \u35492 \u65292 \u35531 \u27298 \u26597 \u36039 \u26009 \u24235 \u27402 \u38480 \u25110 \u37325 \u35430 \u65281 ");\
+            \});\
+    \}\
+\
+    // \uc0\u26696 \u20214 \u36914 \u24230 \u26597 \u35426 \u65306 \u36899 \u32218 \u38642 \u31471 \u36039 \u26009 \u24235 \u31934 \u28310 \u23565 \u27604 \
+    function handleSearchSubmit(event) \{\
+        event.preventDefault();\
+        \
+        const userInput = document.getElementById('captcha_input2').value.trim();\
+        if (userInput !== captcha2) \{\
+            alert("\uc0\u39511 \u35657 \u30908 \u36664 \u20837 \u37679 \u35492 \u65292 \u35531 \u37325 \u26032 \u36664 \u20837 \u65281 ");\
+            document.getElementById('captcha_input2').value = "";\
+            refreshCaptcha2();\
+            return;\
+        \}\
+\
+        const inputCaseId = document.getElementById('search_case_id').value.trim();\
+        const inputStudentId = document.getElementById('search_student_id').value.trim();\
+\
+        // \uc0\u30452 \u25509 \u21521  Firebase \u26597 \u35426 \u23565 \u25033 \u21934 \u34399 \u31680 \u40670 \u30340  JSON \u36039 \u26009 \
+        fetch(`$\{FIREBASE_DB_URL\}petitions/$\{inputCaseId\}.json`)\
+            .then(res => res.json())\
+            .then(caseData => \{\
+                if (!caseData || caseData.studentId !== inputStudentId) \{\
+                    alert("\uc0\u26597 \u28961 \u27492 \u26696 \u20214 \u32232 \u34399 \u65292 \u25110 \u23416 \u34399 \u36664 \u20837 \u19981 \u31526 \u65292 \u35531 \u37325 \u26032 \u30906 \u35469 \u65281 ");\
+                    refreshCaptcha2();\
+                    return;\
+                \}\
+\
+                document.getElementById('t-class').textContent = caseData.className;\
+                document.getElementById('t-seat').textContent = caseData.seatNumber;\
+                document.getElementById('t-name').textContent = caseData.name;\
+                document.getElementById('t-gender').textContent = caseData.gender;\
+                document.getElementById('t-student-id').textContent = caseData.studentId;\
+                document.getElementById('t-email').textContent = caseData.email;\
+                document.getElementById('t-phone').textContent = caseData.phone;\
+                document.getElementById('t-category').textContent = caseData.category;\
+                document.getElementById('t-location').textContent = caseData.location;\
+                document.getElementById('t-subject').textContent = caseData.subject;\
+                document.getElementById('t-content').textContent = caseData.content;\
+                document.getElementById('t-drive').textContent = caseData.driveUrl;\
+                document.getElementById('t-status').textContent = caseData.status;\
+\
+                navigateTo('page-status-result');\
+            \})\
+            .catch(err => \{\
+                console.error(err);\
+                alert("\uc0\u35712 \u21462 \u38642 \u31471 \u36039 \u26009 \u24235 \u22833 \u25943 \u65292 \u35531 \u30906 \u35469 \u32178 \u36335 \u36899 \u32218 \u12290 ");\
+            \});\
+    \}\
+\
+    // \uc0\u24460 \u21488 \u31649 \u29702 \u31471 \u65306 \u20462 \u25913 \u19979 \u25289 \u36984 \u21934 \u30332 \u36865  PATCH \u26356 \u26032 \u38642 \u31471 \u36914 \u24230 \
+    function updateCaseStatusInAdmin(caseId, newStatus) \{\
+        fetch(`$\{FIREBASE_DB_URL\}petitions/$\{caseId\}.json`, \{\
+            method: 'PATCH',\
+            body: JSON.stringify(\{ status: newStatus \})\
+        \})\
+        .then(res => res.json())\
+        .then(() => \{\
+            alert(`\uc0\u38642 \u31471 \u21516 \u27493 \u26356 \u26032 \u25104 \u21151 \u65281 \u26696 \u20214  $\{caseId\} \u29376 \u24907 \u24050 \u35722 \u26356 \u28858 \u65306 $\{newStatus\}`);\
+        \})\
+        .catch(err => \{\
+            console.error(err);\
+            alert("\uc0\u21516 \u27493 \u26356 \u26032 \u38642 \u31471 \u29376 \u24907 \u22833 \u25943 \u12290 ");\
+        \});\
+    \}\
+\
+    // \uc0\u24460 \u21488 \u31649 \u29702 \u31471 \u65306 \u25235 \u21462  Firebase \u20839 \u25152 \u26377 \u26696 \u20214 \u65288 \u19981 \u36879 \u38706 \u38515 \u24773 \u20154 \u20491 \u36039 \u65289 \
+    function initAdminDashboard() \{\
+        const container = document.getElementById('admin-cases-container');\
+        \
+        fetch(`$\{FIREBASE_DB_URL\}petitions.json`)\
+            .then(res => res.json())\
+            .then(dbData => \{\
+                if (!dbData) \{\
+                    container.innerHTML = '<p style="color: #666; text-align: center; padding:20px;">\uc0\u30446 \u21069 \u38642 \u31471 \u36039 \u26009 \u24235 \u20013 \u23578 \u28961 \u20219 \u20309 \u38515 \u24773 \u26696 \u20214 \u36039 \u26009 \u12290 </p>';\
+                    return;\
+                \}\
+\
+                const caseIds = Object.keys(dbData).reverse(); // \uc0\u25490 \u24207 \u35753 \u26368 \u26032 \u26696 \u20214 \u25490 \u26368 \u21069 \
+                let html = "";\
+                \
+                caseIds.forEach(id => \{\
+                    const caseData = dbData[id];\
+                    html += `\
+                        <div class="admin-case-card">\
+                            <div class="admin-case-header">\
+                                <div>\uc0\u21934 \u34399 \u65306 <span class="admin-case-id">$\{id\}</span></div>\
+                                <div>\uc0\u38917 \u30446 \u65306 $\{caseData.category\}</div>\
+                            </div>\
+                            <div style="margin-bottom: 8px;"><strong>\uc0\u26696 \u20214 \u20301 \u32622 \u65306 </strong> $\{caseData.location\}</div>\
+                            <div style="margin-bottom: 8px;"><strong>\uc0\u26696 \u20214 \u20027 \u26088 \u65306 </strong> $\{caseData.subject\}</div>\
+                            <div style="margin-bottom: 12px; background:#1a1a1a; padding:10px; border-radius:4px; font-size:13px; white-space:pre-wrap;">$\{caseData.content\}</div>\
+                            <div style="margin-bottom: 15px;"><strong>\uc0\u38642 \u31471 \u38468 \u20214 \u65306 </strong> $\{caseData.driveUrl !== "\u28961 " ? `<a href="$\{caseData.driveUrl\}" target="_blank" style="color:#3b82f6;">\u40670 \u27492 \u25171 \u38283 \u36899 \u32080 </a>` : "\u28961 "\}</div>\
+                            \
+                            <div class="form-group" style="margin-bottom: 0;">\
+                                <label style="color:#fde047; font-size:13px;">\uc0\u35722 \u26356 \u26696 \u20214 \u36914 \u24230 \u65306 </label>\
+                                <select onchange="updateCaseStatusInAdmin('$\{id\}', this.value)" style="border-color:#555;">\
+                                    <option value="\uc0\u23416 \u29983 \u26371 \u26597 \u26680 \u34389 \u29702 \u20013 " $\{caseData.status === '\u23416 \u29983 \u26371 \u26597 \u26680 \u34389 \u29702 \u20013 ' ? 'selected' : ''\}>\u23416 \u29983 \u26371 \u26597 \u26680 \u34389 \u29702 \u20013 </option>\
+                                    <option value="\uc0\u24050 \u31227 \u35531 \u26657 \u26041 \u21934 \u20301 \u35519 \u34389 " $\{caseData.status === '\u24050 \u31227 \u35531 \u26657 \u26041 \u21934 \u20301 \u35519 \u34389 ' ? 'selected' : ''\}>\u24050 \u31227 \u35531 \u26657 \u26041 \u21934 \u20301 \u35519 \u34389 </option>\
+                                    <option value="\uc0\u26657 \u26041 \u21934 \u20301 \u24050 \u26377 \u21021 \u27493 \u31572 \u35206 " $\{caseData.status === '\u26657 \u26041 \u21934 \u20301 \u24050 \u26377 \u21021 \u27493 \u31572 \u35206 ' ? 'selected' : ''\}>\u26657 \u26041 \u21934 \u20301 \u24050 \u26377 \u21021 \u27493 \u31572 \u35206 </option>\
+                                    <option value="\uc0\u26696 \u20214 \u24050 \u34389 \u29702 \u23436 \u30050 \u20006 \u32080 \u26696 " $\{caseData.status === '\u26696 \u20214 \u24050 \u34389 \u29702 \u23436 \u30050 \u20006 \u32080 \u26696 ' ? 'selected' : ''\}>\u26696 \u20214 \u24050 \u34389 \u29702 \u23436 \u30050 \u20006 \u32080 \u26696 </option>\
+                                </select>\
+                            </div>\
+                        </div>\
+                    `;\
+                \});\
+                container.innerHTML = html;\
+            \})\
+            .catch(err => \{\
+                console.error(err);\
+                container.innerHTML = '<p style="color: #ff6b6b; text-align: center; padding:20px;">\uc0\u35712 \u21462 \u38642 \u31471 \u36039 \u26009 \u24235 \u20986 \u37679 \u65292 \u35531 \u30906 \u35469  Firebase \u30340  Rules \u26159 \u21542 \u35373 \u23450 \u38283 \u25918 \u12290 </p>';\
+            \});\
+    \}\
+\
+    window.addEventListener('DOMContentLoaded', () => \{\
+        refreshCaptcha1();\
+        refreshCaptcha2();\
+        \
+        document.getElementById('captchaCanvas1').addEventListener('click', refreshCaptcha1);\
+        document.getElementById('refreshBtn1').addEventListener('click', refreshCaptcha1);\
+        document.getElementById('audioBtn1').addEventListener('click', () => playAudio(captcha1));\
+        \
+        document.getElementById('captchaCanvas2').addEventListener('click', refreshCaptcha2);\
+        document.getElementById('refreshBtn2').addEventListener('click', refreshCaptcha2);\
+        document.getElementById('audioBtn2').addEventListener('click', () => playAudio(captcha2));\
+\
+        const urlParams = new URLSearchParams(window.location.search);\
+        if (urlParams.get('mode') === 'admin') \{\
+            initAdminDashboard();\
+            navigateTo('page-admin-dashboard');\
+        \}\
+    \});\
+</script>\
+</body>\
+</html>}
